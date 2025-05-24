@@ -1,33 +1,68 @@
-HELP.md
+# -----------------------------
+# General
+# -----------------------------
+.DS_Store
+*.log
+*.class
+
+# -----------------------------
+# Maven
+# -----------------------------
 target/
 !.mvn/wrapper/maven-wrapper.jar
+
+# Ignore target folders everywhere except inside main/test source directories
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+# -----------------------------
+# IntelliJ IDEA
+# -----------------------------
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# -----------------------------
+# Eclipse / STS
+# -----------------------------
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
-.sts4-cache
+.sts4-cache/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# -----------------------------
+# NetBeans
+# -----------------------------
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Ignore top-level build directories
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+# -----------------------------
+# VS Code
+# -----------------------------
 .vscode/
+
+# -----------------------------
+# OS / Misc
+# -----------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig
+*.rej
