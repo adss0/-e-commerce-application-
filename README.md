@@ -11,6 +11,7 @@ A RESTful web service backend for an e-commerce application that manages product
 ## Table of Contents
 
 - [Project Overview](#project-overview)
+- [Technology Stack](#technology-stack)
 - [Features](#features)
 - [Architecture](#architecture)
 - [API Endpoints](#api-endpoints)
@@ -34,6 +35,14 @@ This Spring Boot application implements an e-commerce backend with a focus on cl
 - Comprehensive error handling and logging
 
 ---
+## Technology Stack
+
+- Java 21
+- Spring Boot 3.4.4
+- Maven
+- JPA / Hibernate
+- H2 (in-memory database)
+- RESTful APIs
 
 ## Features
 
@@ -119,8 +128,10 @@ src/main/java/com/application/ecommerce/
 
 ### Prerequisites
 
-Java 17 or higher
-Maven 3.8+
+- Java Development Kit (JDK) 21 or higher
+- Maven 3.8+
+- Optional:
+  IDE with Spring Boot support (e.g., IntelliJ IDEA, Eclipse, VS Code) and Postman or similar tool for API testing
 
 Clone the repository:
 ```
