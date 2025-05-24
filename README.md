@@ -43,6 +43,7 @@ This Spring Boot application implements an e-commerce backend with a focus on cl
 - JPA / Hibernate
 - H2 (in-memory database)
 - RESTful APIs
+---
 
 ## Features
 
