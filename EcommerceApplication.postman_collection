@@ -1,0 +1,1278 @@
+{
+	"info": {
+		"_postman_id": "23343436-7ee9-4ba1-96d8-0802b9faa9bb",
+		"name": "Ecommerce Application Postman Results",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "38837537"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/baskets/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/baskets/3"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/baskets/2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/baskets/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/orders/create?customerId=1234&basketId=3&cardNumber=4111111111111111&expiryDate=12/26&cvv=123",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/create?customerId=1234&basketId=3&cardNumber=4111111111111111&expiryDate=12/26&cvv=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"create"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						},
+						{
+							"key": "basketId",
+							"value": "3"
+						},
+						{
+							"key": "cardNumber",
+							"value": "4111111111111111"
+						},
+						{
+							"key": "expiryDate",
+							"value": "12/26"
+						},
+						{
+							"key": "cvv",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/1234/3?productId=2&quantity=2&action=add",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/baskets/1234/3?productId=2&quantity=2&action=add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"1234",
+						"3"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "2"
+						},
+						{
+							"key": "quantity",
+							"value": "2"
+						},
+						{
+							"key": "action",
+							"value": "add"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/1234/3?productId=1&quantity=2&action=add",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/baskets/1234/3?productId=1&quantity=2&action=add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"1234",
+						"3"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "1"
+						},
+						{
+							"key": "quantity",
+							"value": "2"
+						},
+						{
+							"key": "action",
+							"value": "add"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets?customerId=1234",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/baskets?customerId=1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/orders/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/orders/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/orders/create?customerId=1234&basketId=2&cardNumber=4111111111111111&expiryDate=12/26&cvv=123",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/create?customerId=1234&basketId=2&cardNumber=4111111111111111&expiryDate=12/26&cvv=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"create"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						},
+						{
+							"key": "basketId",
+							"value": "2"
+						},
+						{
+							"key": "cardNumber",
+							"value": "4111111111111111"
+						},
+						{
+							"key": "expiryDate",
+							"value": "12/26"
+						},
+						{
+							"key": "cvv",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/orders/create?customerId=1234&basketId=2&cardNumber=4111111111111111&expiryDate=12/23&cvv=123",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/create?customerId=1234&basketId=2&cardNumber=4111111111111111&expiryDate=12/23&cvv=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"create"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						},
+						{
+							"key": "basketId",
+							"value": "2"
+						},
+						{
+							"key": "cardNumber",
+							"value": "4111111111111111"
+						},
+						{
+							"key": "expiryDate",
+							"value": "12/23"
+						},
+						{
+							"key": "cvv",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/orders/create?customerId=1234&basketId=2&cardNumber=411111111111111&expiryDate=12/26&cvv=123",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/create?customerId=1234&basketId=2&cardNumber=411111111111111&expiryDate=12/26&cvv=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"create"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						},
+						{
+							"key": "basketId",
+							"value": "2"
+						},
+						{
+							"key": "cardNumber",
+							"value": "411111111111111"
+						},
+						{
+							"key": "expiryDate",
+							"value": "12/26"
+						},
+						{
+							"key": "cvv",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/orders/create?customerId=1234&basketId=1&cardNumber=4111111111111111&expiryDate=12/26&cvv=123",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/create?customerId=1234&basketId=1&cardNumber=4111111111111111&expiryDate=12/26&cvv=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"create"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						},
+						{
+							"key": "basketId",
+							"value": "1"
+						},
+						{
+							"key": "cardNumber",
+							"value": "4111111111111111"
+						},
+						{
+							"key": "expiryDate",
+							"value": "12/26"
+						},
+						{
+							"key": "cvv",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/2/apply-promotion?customerId=1234&code=DISCOUNT10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/baskets/2/apply-promotion?customerId=1234&code=DISCOUNT10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"2",
+						"apply-promotion"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						},
+						{
+							"key": "code",
+							"value": "DISCOUNT10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/99999/promotion?customerId=1234",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/baskets/99999/promotion?customerId=1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"99999",
+						"promotion"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/2/promotion?customerId=1234",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/baskets/2/promotion?customerId=1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"2",
+						"promotion"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/2/apply-promotion?customerId=1234&code=DISCOUNT10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/baskets/2/apply-promotion?customerId=1234&code=DISCOUNT10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"2",
+						"apply-promotion"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						},
+						{
+							"key": "code",
+							"value": "DISCOUNT10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/2/apply-promotion?customerId=1234&code=DISCOUNT10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/baskets/2/apply-promotion?customerId=1234&code=DISCOUNT10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"2",
+						"apply-promotion"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						},
+						{
+							"key": "code",
+							"value": "DISCOUNT10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/2/apply-promotion?customerId=1234&code=SAVE10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/baskets/2/apply-promotion?customerId=1234&code=SAVE10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"2",
+						"apply-promotion"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						},
+						{
+							"key": "code",
+							"value": "SAVE10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/1234/2?productId=2&quantity=2&action=add",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/baskets/1234/2?productId=2&quantity=2&action=add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"1234",
+						"2"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "2"
+						},
+						{
+							"key": "quantity",
+							"value": "2"
+						},
+						{
+							"key": "action",
+							"value": "add"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/1234/1?productId=1&quantity=2&action=add",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/baskets/1234/1?productId=1&quantity=2&action=add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"1234",
+						"1"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "1"
+						},
+						{
+							"key": "quantity",
+							"value": "2"
+						},
+						{
+							"key": "action",
+							"value": "add"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets?customerId=1234",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/baskets?customerId=1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/1234/9999",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/baskets/1234/9999"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/1234/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/baskets/1234/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/1234/1?productId=1&quantity=10&action=update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/baskets/1234/1?productId=1&quantity=10&action=update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"1234",
+						"1"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "1"
+						},
+						{
+							"key": "quantity",
+							"value": "10"
+						},
+						{
+							"key": "action",
+							"value": "update"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/1234/1?productId=1&quantity=2&action=INVALID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/baskets/1234/1?productId=1&quantity=2&action=INVALID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"1234",
+						"1"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "1"
+						},
+						{
+							"key": "quantity",
+							"value": "2"
+						},
+						{
+							"key": "action",
+							"value": "INVALID"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/1234/1?productId=1&quantity=-999&action=add",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/baskets/1234/1?productId=1&quantity=-999&action=add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"1234",
+						"1"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "1"
+						},
+						{
+							"key": "quantity",
+							"value": "-999"
+						},
+						{
+							"key": "action",
+							"value": "add"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/1234/1?productId=999&quantity=2&action=add",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/baskets/1234/1?productId=999&quantity=2&action=add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"1234",
+						"1"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "999"
+						},
+						{
+							"key": "quantity",
+							"value": "2"
+						},
+						{
+							"key": "action",
+							"value": "add"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/1234/1?productId=1&quantity=2&action=add",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/baskets/1234/1?productId=1&quantity=2&action=add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"1234",
+						"1"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "1"
+						},
+						{
+							"key": "quantity",
+							"value": "2"
+						},
+						{
+							"key": "action",
+							"value": "add"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Clothes\",\r\n  \"price\": 109.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/products"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"price\": 99.99 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/products"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/products/999",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"price\": 99.99 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/products/999"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/products/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"price\": 99.99 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/products/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"price\": 99.99 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/products"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Sneakers\",\r\n  \"price\": 99.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/products"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Sneakers\",\r\n  \"price\": 99.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/products"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/99999?customerId=1234",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/baskets/99999?customerId=1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"99999"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/baskets/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets/1?customerId=1234",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/baskets/1?customerId=1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets",
+						"1"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/baskets"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/baskets?customerId=1234",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/baskets?customerId=1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"baskets"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1234"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
