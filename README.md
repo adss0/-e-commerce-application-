@@ -4,8 +4,7 @@
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.1.0-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
-A RESTful web service backend for an e-commerce application that manages products, shopping baskets, promotions, and order processing with simulated payment integration.  
-Inspired by Clean Architecture principles and the blog post: [Clean Architecture with Spring Boot - A Good Idea?](https://medium.com/@viniciusromualdobusiness/clean-architecture-with-spring-boot-a-good-idea-d6f97e450130)
+A RESTful web service backend for an e-commerce application that manages products, shopping baskets, promotions, and order processing with simulated payment integration. Inspired by Clean Architecture principles and the blog post: [Clean Architecture with Spring Boot - A Good Idea?](https://medium.com/@viniciusromualdobusiness/clean-architecture-with-spring-boot-a-good-idea-d6f97e450130)
 
 ---
 
@@ -83,7 +82,7 @@ src/main/java/com/application/ecommerce/
 │   │   └── usecases/       # Use case implementations handling business logic for each API endpoint
 ├── application/            # Application-level orchestration and startup configuration
 ````
-
+---
 ## API Endpoints
 
 ### Products
@@ -114,6 +113,8 @@ src/main/java/com/application/ecommerce/
 | GET    | `/orders` | Get all orders |
 | GET    | `/orders/{id}` | Get specific order details |
 
+---
+
 ## Getting Started
 
 ### Prerequisites
@@ -134,7 +135,7 @@ Run the application:
 ```
 mvn spring-boot:run
 ```
-
+---
 ## Testing
 
 The application has been tested using a Postman collection to validate the API endpoints and workflows.
@@ -143,6 +144,8 @@ You can find the complete Postman collection here:
 ```
 EcommerceApplication/EcommerceApplication.postman_collection
 ```
+---
+
 ## Further Implementation
 
 ### 1. Authentication & Authorization
@@ -156,6 +159,8 @@ EcommerceApplication/EcommerceApplication.postman_collection
 ### 3. Persistence Layer
 - Currently uses in-memory H2
 - Suggested: Add PostgreSQL support
+
+---
 
 ## License 
 
