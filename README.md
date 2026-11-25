@@ -1,7 +1,9 @@
-# E-Commerce Web Service Application
+# E-Commerce Web Service Application 🛒
 
-![Java](https://img.shields.io/badge/Java-17+-orange)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.1.0-brightgreen)
+**A Spring Boot REST API for an online shop, built with Clean Architecture. It manages a product catalogue, customer shopping baskets and promotion codes, and turns a basket into an order once the card passes Luhn and expiry checks.**
+
+![Java](https://img.shields.io/badge/Java-21-orange)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.4.4-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
 A RESTful web service backend for an e-commerce application that manages products, shopping baskets, promotions, and order processing with simulated payment integration. Inspired by Clean Architecture principles and the blog post: [Clean Architecture with Spring Boot - A Good Idea?](https://medium.com/@viniciusromualdobusiness/clean-architecture-with-spring-boot-a-good-idea-d6f97e450130)
@@ -135,27 +137,33 @@ src/main/java/com/application/ecommerce/
   IDE with Spring Boot support (e.g., IntelliJ IDEA, Eclipse, VS Code) and Postman or similar tool for API testing
 
 Clone the repository:
-```
+```bash
 git clone https://github.com/adss0/-e-commerce-application-.git
-cd EcommerceApplication
+cd -- -e-commerce-application-
 ```
-Build the Project 
-```
+Build the project:
+```bash
 mvn clean install
 ```
 Run the application:
-```
+```bash
 mvn spring-boot:run
 ```
+No Maven installed? Use the included wrapper instead: `./mvnw spring-boot:run` (or `mvnw.cmd spring-boot:run` on Windows).
+
+The API starts on <http://localhost:8080>. Try <http://localhost:8080/products> first. The H2 database is in memory, so data resets each time the app restarts.
+
 ---
 ## Testing
 
 The application has been tested using a Postman collection to validate the API endpoints and workflows.
 
-You can find the complete Postman collection here:
+You can find the complete Postman collection in the project folder:
 ```
-EcommerceApplication/EcommerceApplication.postman_collection
+EcommerceApplication.postman_collection
 ```
+Import it into Postman (**File → Import**) to try every endpoint. There's also a PowerShell script, `producttest.ps1`, that adds sample products to a running instance.
+
 ---
 
 ## Further Implementation
@@ -174,6 +182,6 @@ EcommerceApplication/EcommerceApplication.postman_collection
 
 ---
 
-## License 
+## License
 
 This project is licensed under the MIT License.
